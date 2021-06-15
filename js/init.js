@@ -7,7 +7,6 @@
  * quedar igual que en tu
  * servidor. */
 // @ts-ignore
-//Hola
 firebase.initializeApp({
   apiKey: "AIzaSyAGj3DqTtchpbizn8Zzvo0zzY17bNWkMBI",
     authDomain: "proyectofinal10000.firebaseapp.com",
