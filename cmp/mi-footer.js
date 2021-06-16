@@ -4,7 +4,7 @@ class MiFooter
     this.innerHTML = /* html */
       `<p>
         &copy; 2021
-        Castro Hernandez Alan Daniel.
+        Ricardo Armando Machorro Reyes.
       </p>`;
   }
 }
