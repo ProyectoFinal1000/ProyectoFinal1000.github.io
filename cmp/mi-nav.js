@@ -16,14 +16,6 @@ class MiNav extends HTMLElement {
           <a href="index.html">
             Sesión</a>
         </li>
-        <li>
-            <a href=
-"pasatiempos.html">Pasatiempos</a>
-          </li>
-          <li>
-            <a href=
-      "usuarios.html">Usuarios</a>
-          </li>;
       </ul>`;
     this.ul =
       this.querySelector("ul");
