@@ -37,7 +37,7 @@ class MiNav extends HTMLElement {
           usu.email);
       /* Enlaces para solo
        * para clientes. */
-      if (roles.has("Usuario")) {
+      if (roles.has("Cliente")) {
         html += /* html */
           `<li>
             <a href=
