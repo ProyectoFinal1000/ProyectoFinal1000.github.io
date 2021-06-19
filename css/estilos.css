@@ -5,15 +5,15 @@
 :root {
   font-family: sans-serif;
   --col-active: #4646462c;
-  --color-header: white;
-  --colorMiNav: white;
+  --color-header: rgb(255, 255, 255);
+  --colorMiNav: rgb(255, 255, 255);
 }
 
 body {
   max-width: 640px;
   margin: 0 auto;
   padding: 0.5rem;
-  background-color: aqua;
+  background-color: rgb(255, 255, 255);
 }
 
 header {
