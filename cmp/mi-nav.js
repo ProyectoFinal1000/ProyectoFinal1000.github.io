@@ -56,10 +56,6 @@ class MiNav extends HTMLElement {
         html += /* html */
           `<li>
             <a href=
-"pasatiempos.html">Pasatiempos</a>
-          </li>
-          <li>
-            <a href=
               "chat.html">Chat</a>
           </li>
           <li>
