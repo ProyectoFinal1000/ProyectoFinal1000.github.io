@@ -31,7 +31,13 @@ getAuth().onAuthStateChanged(
     usuario */
 async function protege(usuario) {
   if (tieneRol(usuario,
-    ["Administrador"], ["Cliente"])) {
+    ["Administrador"])) {
+    busca();
+  }
+}
+async function protege(usuario) {
+  if (tieneRol(usuario,
+    ["Cliente"])) {
     busca();
   }
 }

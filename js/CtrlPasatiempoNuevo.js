@@ -26,11 +26,19 @@ getAuth().onAuthStateChanged(
     usuario */
 async function protege(usuario) {
   if (tieneRol(usuario,
-    ["Administrador"], ["Cliente"])) {
+    ["Administrador"])) {
     forma.addEventListener(
       "submit", guarda);
   }
 }
+async function protege(usuario) {
+  if (tieneRol(usuario,
+    ["Cliente"])) {
+      forma.addEventListener(
+        "submit", guarda);
+  }
+}
+
 
 /** @param {Event} evt */
 async function guarda(evt) {
