@@ -45,8 +45,20 @@ class MiNav extends HTMLElement {
           </li>
           <li>
             <a href=
-"pasatiempos.html">Pasatiempos</a>
-          </li>`;
+"pasatiempos.html">Descripción del perro</a>
+          </li>
+          <li>
+            <a href=
+      "usuarioNuevo.html">Agregar perro</a>
+          </li> 
+          <li>
+            <a href=
+      "usuarios.html">Perros publicados</a>
+          </li> 
+          <li>
+          <a href=
+            "chat.html">Chat</a>
+        </li>`;
       }
       /* Enlaces para solo
        * administradores.
