@@ -4,16 +4,16 @@
 
 :root {
   font-family: sans-serif;
-  --col-active: #4646462c;
-  background-image: url(Fondo2.jpg);
-  background-image: url(Fondo2.jpg);
+  --col-active: #9107072c;
+  --color-header: url(Fondo1.jp);
+  --colorMiNav: url(Fondo1.jp);
 }
 
 body {
   max-width: 640px;
   margin: 0 auto;
   padding: 0.5rem;
-  background-image: url(Fondo2.jpg);
+  background-image: url(Fondo1.jp);
 }
 
 header {
