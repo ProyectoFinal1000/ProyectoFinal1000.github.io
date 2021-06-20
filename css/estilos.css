@@ -5,15 +5,15 @@
 :root {
   font-family: sans-serif;
   --col-active: #9107072c;
-  --color-header: url(Fondo1.jpg);
-  --colorMiNav: url(Fondo1.jpg);
+  --color-header: url(Fondo3.jpg);
+  --colorMiNav: url(Fondo3.jpg);
 }
 
 body {
   max-width: 640px;
   margin: 0 auto;
   padding: 0.5rem;
-  background-image: url(Fondo1.jpg);
+  background-image: url(Fondo3.jpg);
 }
 
 header {
