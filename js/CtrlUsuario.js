@@ -79,3 +79,17 @@ async function guarda(evt) {
   await guardaUsuario(evt,
     new FormData(forma), id);
 }
+
+async function elimina() {
+  try {
+    if (confirm("Confirmar la " +
+      "eliminación")) {
+      await daoUsuario.
+        doc(id).delete();
+      await eliminaStorage(id);
+      muestraUsuarios();
+    }
+  } catch (e) {
+    muestraError(e);
+  }
+}
