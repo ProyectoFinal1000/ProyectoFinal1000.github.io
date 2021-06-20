@@ -13,16 +13,16 @@ import {
 
 const SIN_PASATIEMPO = /* html */
   `<option value="">
-    -- Sin Pasatiempo --
+    -- Sin descripción --
   </option>`;
 
 const firestore = getFirestore();
 const daoRol = firestore.
   collection("Rol");
 const daoPasatiempo = firestore.
-  collection("Pasatiempo");
+  collection("Descripcion");
 const daoUsuario = firestore.
-  collection("Usuario");
+  collection("Perro");
 
 /**
  * @param {

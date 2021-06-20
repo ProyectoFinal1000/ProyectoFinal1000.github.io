@@ -28,16 +28,6 @@ getAuth().onAuthStateChanged(
     usuario */
 async function protege(usuario) {
   if (tieneRol(usuario,
-    ["Administrador"])) {
-    forma.addEventListener(
-      "submit", guarda);
-    selectPasatiempos(
-      forma.pasatiempoId, "");
-    checksRoles(listaRoles, []);
-  }
-}
-async function protege(usuario) {
-  if (tieneRol(usuario,
     ["Cliente"])) {
     forma.addEventListener(
       "submit", guarda);
