@@ -54,35 +54,11 @@ class MiNav extends HTMLElement {
           <li>
             <a href=
       "usuarios.html">Perros publicados</a>
-          </li> 
-          <li>
-          <a href=
-            "chat.html">Chat</a>
-        </li>`;
+          </li>`;
       }
       /* Enlaces para solo
        * administradores.
        */
-      if (roles.has(
-        "Administrador")) {
-        html += /* html */
-          `<li>
-            <a href=
-"pasatiempos.html">Descripción del perro</a>
-          </li>
-          <li>
-            <a href=
-      "usuarioNuevo.html">Agregar perro</a>
-          </li> 
-          <li>
-            <a href=
-      "usuarios.html">Perros publicados</a>
-          </li> 
-          <li>
-          <a href=
-            "chat.html">Chat</a>
-        </li>`;
-      }
       this.ul.innerHTML += html;
     }
   }
