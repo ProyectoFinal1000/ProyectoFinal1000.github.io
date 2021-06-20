@@ -63,6 +63,10 @@ class MiNav extends HTMLElement {
       "usuarioNuevo.html">Agregar perro</a>
           </li> 
           <li>
+            <a href=
+      "usuario.html">Perros publicados</a>
+          </li> 
+          <li>
           <a href=
             "chat.html">Chat</a>
         </li>`;
