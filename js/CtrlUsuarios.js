@@ -96,7 +96,7 @@ async function htmlFila(doc) {
     "usuario.html?${parámetros}">
         <span class="marco">
           <img src="${img}"
-            alt="Falta el Avatar">
+            alt="Falta la imagen">
         </span>
         <span class="texto">
           <strong
@@ -133,7 +133,7 @@ async function
         `${cod(data.nombre)}`);
     }
   }
-  return "-- Sin Pasatiempo --";
+  return "-- Sin descripción --";
 }
 
 /** Recupera el html de los
