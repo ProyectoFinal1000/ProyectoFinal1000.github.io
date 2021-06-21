@@ -26,7 +26,7 @@ getAuth().
     usuario */
 async function protege(usuario) {
   if (tieneRol(usuario,
-    ["Cliente"])) {
+    ["Administrador"])) {
     consulta();
   }
 }
@@ -50,8 +50,8 @@ function htmlLista(snap) {
   } else {
     html += /* html */
       `<li class="vacio">
-        -- No hay descripciones
-        registradas. --
+        -- No hay pasatiempos
+        registrados. --
       </li>`;
   }
   lista.innerHTML = html;

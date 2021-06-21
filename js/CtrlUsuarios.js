@@ -32,7 +32,7 @@ getAuth().onAuthStateChanged(
     usuario */
 async function protege(usuario) {
   if (tieneRol(usuario,
-    ["Cliente"])) {
+    ["Administrador"])) {
     consulta();
   }
 }
@@ -96,7 +96,7 @@ async function htmlFila(doc) {
     "usuario.html?${parámetros}">
         <span class="marco">
           <img src="${img}"
-            alt="Falta la imagen">
+            alt="Falta el Avatar">
         </span>
         <span class="texto">
           <strong
@@ -133,7 +133,7 @@ async function
         `${cod(data.nombre)}`);
     }
   }
-  return "-- Sin descripción --";
+  return "-- Sin Pasatiempo --";
 }
 
 /** Recupera el html de los
