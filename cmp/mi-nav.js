@@ -56,9 +56,6 @@ class MiNav extends HTMLElement {
       "usuarios.html">Perros publicados</a>
           </li>`;
       }
-      /* Enlaces para solo
-       * administradores.
-       */
       this.ul.innerHTML += html;
     }
   }
