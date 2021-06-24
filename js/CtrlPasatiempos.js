@@ -26,7 +26,7 @@ getAuth().
     usuario */
 async function protege(usuario) {
   if (tieneRol(usuario,
-    ["Cliente"])) {
+    ["Administrador"])) {
     consulta();
   }
 }

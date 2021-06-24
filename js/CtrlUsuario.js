@@ -25,9 +25,11 @@ const params =
   new URL(location.href).
     searchParams;
 const id = params.get("id");
+
 const daoUsuario = getFirestore().
   collection("Usuario");
 /** @type {HTMLFormElement} */
+
 const forma = document["forma"];
 const img = document.
   querySelector("img");
@@ -55,6 +57,7 @@ async function busca() {
     if (doc.exists) {
       const data = doc.data();
       forma.cue.value = id || "";
+      
       img.src =
         await urlStorage(id);
       selectPasatiempos(
