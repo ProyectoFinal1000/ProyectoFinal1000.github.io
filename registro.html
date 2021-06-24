@@ -4,6 +4,31 @@
     <title>Registro</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.6.2/firebase-storage.js">
+    </script>
+  <script src="js/init.js">
+  </script>
+  <script type="module"
+    src="cmp/mi-nav.js">
+    </script>
+  <script type="module"
+    src="cmp/mi-footer.js">
+    </script>
+  <script type="module"
+    src="cmp/mi-progreso.js">
+    </script>
+  <link rel="stylesheet"
+    href="css/estilos.css">
 </head>
 <body>
   <header>
@@ -16,16 +41,16 @@
         Nombre<br>
         <input name="nombre" type="text" autofocus required
                pattern=".{1,30}" maxlength="30" size="33"
-               placeholder="1 a 30 caracteres">
+               placeholder="Nombre(s)">
       </label>
       <br><output id="salidaNombre"></output>
     </p>
     <p>
         <label accesskey="S">
-          Apellido<br>
-          <input name="apellido" type="password" autocomplete="off" required
+          Apellido Paterno<br>
+          <input name="apellido" type="text" required
                  pattern=".{5,30}" maxlength="30" size="33"
-                 placeholder="5 a 30 caracteres">
+                 placeholder="Apellido paterno">
         </label>
         <br><output id="salidaApellido"></output>
       </p>
@@ -48,7 +73,7 @@
       <p>
         <label accesskey="A">
           Has adoptado antes?<br>
-          <input name="adoptado" type="text" required list="navegadores">
+          <input name="adoptado" type="text" required list="adopcion">
         </label>
         <br><output id="salidaAdoptado"></output>
       </p>
