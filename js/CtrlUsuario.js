@@ -25,11 +25,9 @@ const params =
   new URL(location.href).
     searchParams;
 const id = params.get("id");
-
 const daoUsuario = getFirestore().
   collection("Usuario");
 /** @type {HTMLFormElement} */
-
 const forma = document["forma"];
 const img = document.
   querySelector("img");
@@ -44,7 +42,7 @@ getAuth().onAuthStateChanged(
     usuario */
 async function protege(usuario) {
   if (tieneRol(usuario,
-    ["Cliente"])) {
+    ["Administrador"])) {
     busca();
   }
 }
@@ -57,7 +55,6 @@ async function busca() {
     if (doc.exists) {
       const data = doc.data();
       forma.cue.value = id || "";
-      
       img.src =
         await urlStorage(id);
       selectPasatiempos(

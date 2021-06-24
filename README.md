@@ -1,3 +1,4 @@
-# ProyectoFinal1000.github.io
-Ejemplo De Conexión a la B.D con Firebase
-https://proyectofinal1000.github.io/
+# grupweb50.github.io
+Ejemplo de bases de datos con Firebase.
+
+https://grupweb50.github.io
