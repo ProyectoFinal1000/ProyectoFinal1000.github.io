@@ -40,7 +40,7 @@
     <p>
       <label acceskey="R">
           Registra cuanta mercancía llegó o la que ya había:<br>
-          <input name="registro" type="text" class="numero"  required pattern="[0-9,]+{.}\d{1}" placeholder="en centimetros"
+          <input name="registro" type="text" class="numero"  required pattern="[0-9,]+{.}\d{1}" placeholder="Registra"
                  maxlength="11" size="13">
           
       </label>
@@ -49,7 +49,7 @@
   <p>
       <label acceskey="P">
           Precio de la mercancía:<br>
-          <input name="precio" type="text" class="numero"  required pattern="[0-9,]+{.}\d{1}"  placeholder="en kilogramos"
+          <input name="precio" type="text" class="numero"  required pattern="[0-9,]+{.}\d{1}"  placeholder="$"
                  maxlength="11" size="13" >
           
       </label>
@@ -58,7 +58,7 @@
    <p>
       <label acceskey="D">
           Descuento aplicable sobre la mercancía:<br>
-          <input name="descuento" type="text" class="numero" required pattern="[0-9,]+{.}\d{1}" placeholder="en centimetros"
+          <input name="descuento" type="text" class="numero" required pattern="[0-9,]+{.}\d{1}" placeholder="%"
                  maxlength="11" size="13" >
           
       </label>
@@ -68,7 +68,8 @@
       
       <label acceskey="E">
           Mercancía total robada o extraviada: <br>
-          <input name="extraviada" type="text" class="numero" required pattern="[0-9,]+{.}\d{1}"  maxlength="11" size="13">
+          <input name="extraviada" type="text" class="numero" required pattern="[0-9,]+{.}\d{1}" placeholder="Robada o extraviada" 
+                 maxlength="11" size="13">
         </label>
           <br><output id="salidaExtraviada"></output> 
   </p>
