@@ -39,28 +39,27 @@
     <p><em>Necesitas registrar todos los datos para continuar</em></p>
     <p>
       <label accesskey="N">
-        Nombre<br>
-        <input name="nombre" type="text" autofocus required
+        Raza<br>
+        <input name="raza" type="text" autofocus required
                pattern=".{1,30}" maxlength="30" size="33"
-               placeholder="Nombre(s)">
+               placeholder="Raza del perro">
       </label>
-      <br><output id="salidaNombre"></output>
+      <br><output id="salidaRaza"></output>
     </p>
     <p>
-        <label accesskey="S">
-          Apellidos<br>
-          <input name="apellido" type="text" required
-                 pattern=".{5,30}" maxlength="30" size="33"
-                 placeholder="Apellidos">
+        <label>
+          Imagen del perro
+          <input name="avatar"
+            type="file" required
+            accept=".png,.jpg,.jpeg,.gif">
         </label>
-        <br><output id="salidaApellido"></output>
       </p>
       <p>
         <label accesskey="T">
           Teléfono<br>
           <input name="telefono" type="text" required
           pattern="[A-Za-z0-9]{4,16}" maxlength="16" size="19"
-          placeholder="4 a 16 letras o dígitos">
+          placeholder="4 a 16 dígitos (Celular)">
         </label>
         <br><output id="salidaTelefono"></output>
       </p>
