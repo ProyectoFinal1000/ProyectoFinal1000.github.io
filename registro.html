@@ -48,11 +48,12 @@
     </p>
     <p>
         <label>
-          Imagen del perro
-          <input name="avatar"
-            type="file" required
-            accept=".png,.jpg,.jpeg,.gif">
-        </label>
+          Año(s)/Mes(es) del perro
+          <input name="edad" type="text" required
+               pattern=".{1,30}" maxlength="30" size="33"
+               placeholder="Edad del perro">
+      </label>
+      <br><output id="salidaEdad"></output>
       </p>
       <p>
         <label accesskey="T">

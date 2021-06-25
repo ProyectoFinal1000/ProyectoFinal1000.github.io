@@ -1,7 +1,7 @@
 "use strict";
 var forma = document.getElementById("forma"),
-campos = ["raza", "telefono", "email", "adoptado", "fecha"],
-salidas = ["salidaNombre", "salidaTelefono", "salidaEmail", "salidaAdoptado", "salidaFecha"];
+campos = ["raza", "edad", "telefono", "email", "adoptado", "fecha"],
+salidas = ["salidaNombre", "SalidaEdad", "salidaTelefono", "salidaEmail", "salidaAdoptado", "salidaFecha"];
 
 forma.addEventListener("submit", procesa, false);
 
