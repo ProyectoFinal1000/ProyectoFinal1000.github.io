@@ -13,13 +13,13 @@ body {
   max-width: 640px;
   margin: 0 auto;
   padding: 0.5rem;
-  background-color: aqua;
+  background-image: url("Fondo1.jpg");
 }
 
 header {
   position: -webkit-sticky;
   position: sticky;
-  top: 0%;
+  top: 0;
   background-color:
     var(--color-header);
 }
