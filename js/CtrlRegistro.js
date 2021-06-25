@@ -1,21 +1,16 @@
 "use strict";
 var forma = document.getElementById("forma"),
 txtFecha = forma["fecha"],
-campos = ["nombre", "apellido", "telefono", "email", "adoptado"],
+campos = ["nombre", "apellido", "telefono", "email", "adoptado", "fecha"],
 salidaFecha = document.getElementById("salidaFecha"),
-salidas = ["salidaNombre", "salidaApellido", "salidaTelefono", "salidaEmail", "salidaAdoptado"];
+salidas = ["salidaNombre", "salidaApellido", "salidaTelefono", "salidaEmail", "salidaAdoptado", "salidaFecha"];
 
 forma.addEventListener("submit", procesa, false);
 
 function procesa(){
     for (var i = 0, longitud = campos.length; i < longitud; i++) {
-    var fechaValueAsDate = txtFecha.valueAsDate,
-    fecha = new Date(txtFecha.value),
     var campo = forma[campos[i]];
     var salida = document.getElementById(salidas[i]);
     salida.value = campo.value;
-    salidaFecha.textContent = txtFecha.type + " | "+txtFecha.value + "|"
-    +fecha.toGMTString() +
-    (fechaValueAsDate ? "|valueAsDate: "+fechaValueAsDate.toGMTString(): "");
   }
 }
