@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Operaciones</title>
     <script
     src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js">
     </script>
@@ -33,68 +33,70 @@
 <body>
     <mi-nav></mi-nav>
   <header>
-    <h1>Anota tus datos por favor</h1>
+    <h1>Realiza la operación que necesites</h1>
   </header>
   <form id="forma" action="javascript:;">
     <p><em>Necesitas registrar todos los datos para continuar</em></p>
     <p>
-      <label accesskey="N">
-        Raza<br>
-        <input name="raza" type="text" autofocus required
-               pattern=".{1,30}" maxlength="30" size="33"
-               placeholder="Raza del perro">
+      <label acceskey="R">
+          Registra cuanta mercancía llegó o la que ya había:<br>
+          <input name="registro" type="text" class="numero"  required pattern="[0-9,]+{.}\d{1}" placeholder="en centimetros"
+                 maxlength="11" size="13">
+          
       </label>
-      <br><output id="salidaRaza"></output>
-    </p>
-    <p>
-        <label accesskey="R">
-          Año(s)/Mes(es) del perro
-          <input name="edad" type="text" required
-               pattern=".{1,30}" maxlength="30" size="33"
-               placeholder="Edad del perro">
+      <br><output id="salidaRegistro"></output>
+  </p>
+  <p>
+      <label acceskey="P">
+          Precio de la mercancía:<br>
+          <input name="precio" type="text" class="numero"  required pattern="[0-9,]+{.}\d{1}"  placeholder="en kilogramos"
+                 maxlength="11" size="13" >
+          
       </label>
-      <br><output id="salidaEdad"></output>
-      </p>
-      <p>
-        <label accesskey="T">
-          Teléfono<br>
-          <input name="telefono" type="text" required
-          pattern="[A-Za-z0-9]{4,16}" maxlength="16" size="19"
-          placeholder="4 a 16 dígitos (Celular)">
+      <br><output id="salidaPrecio"></output>
+  </p>
+   <p>
+      <label acceskey="D">
+          Descuento aplicable sobre la mercancía:<br>
+          <input name="descuento" type="text" class="numero" required pattern="[0-9,]+{.}\d{1}" placeholder="en centimetros"
+                 maxlength="11" size="13" >
+          
+      </label>
+      <br><output id="salidaDescuento"></output>
+  </p>
+  <p>
+      
+      <label acceskey="E">
+          Mercancía total robada o extraviada: <br>
+          <input name="extraviada" type="text" class="numero" required pattern="[0-9,]+{.}\d{1}"  maxlength="11" size="13">
         </label>
-        <br><output id="salidaTelefono"></output>
-      </p>
-      <p>
-        <label accesskey="C">
-          Correo Electrónico<br>
-          <input name="email" type="email" required size="33">
-        </label>
-        <br><output id="salidaEmail"></output>
-      </p>
-      <p>
-        <label accesskey="A">
-          Has adoptado antes?<br>
-          <input name="adoptado" type="text" required list="adopcion">
-        </label>
-        <br><output id="salidaAdoptado"></output>
-      </p>
-      <p>
-        <label accesskey="F">
-         Inserta la fecha del día de hoy<br>
-          <input name="fecha" type="date"  required max="2022-01-24"
-                 min="2021-01-24">
-        </label>
-        <br><output id="salidaFecha"></output>
-      </p>
-      <p>
-        <input type="submit" value="Procesar" accesskey="P">
-      </p>
-    </form>
-      <datalist id="adopcion">
-        <option value="Si">
-        <option value="No">
-        <option value="">
-      </datalist>
-        <script src="js/CtrlRegistro.js"></script>
-    </body>
-  </html>
+          <br><output id="salidaExtraviada"></output> 
+  </p>
+  
+ 
+  <p>
+      <button type="button" onclick="procesa()">CALCULAR</button>
+  </p>
+   <p>
+      <label acceskey="U">
+          Utilidad total de la mercancía: 
+      </label>
+      <output id="salidaUtilidad"></output>
+  </p>
+  <p>
+      <label acceskey="B">
+          Utilidad total de la mercancía con descuento: 
+      </label>
+      <output id="salidaUDesc"></output>
+  </p>
+  <p>
+      <label acceskey="P">
+          Perdida por la mercancia robada: 
+      </label>
+      <output id="salidaRobada"></output>
+  </p>
+</form>
+<script src="js/CtrlRegistro.js"></script>
+<mi-footer></mi-footer>
+</body>
+</html>
