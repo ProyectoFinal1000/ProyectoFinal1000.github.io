@@ -5,15 +5,14 @@
 :root {
   font-family: sans-serif;
   --col-active: #4646462c;
-  --color-header: rgb(255, 255, 255);
-  --colorMiNav: rgb(255, 255, 255);
+  --color-header: white;
+  --colorMiNav: white;
 }
 
 body {
   max-width: 640px;
   margin: 0 auto;
   padding: 0.5rem;
-  background-color: darkcyan;
 }
 
 header {
@@ -23,6 +22,8 @@ header {
   background-color:
     var(--color-header);
 }
+*:required, .obligatorio {border: thin solid blue}
+input [type=number], .numero {text-align: left}
 
 .herramientas {
   display: flex;
@@ -59,5 +60,5 @@ p label>* {
   font-weight: normal;
   font-size: 1rem;
   box-sizing: border-box;
-  width: 100%;
+  width: 60%;
 }
