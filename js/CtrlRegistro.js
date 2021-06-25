@@ -13,11 +13,11 @@ salidaRobada = document.getElementById("salidaRobada");
 function procesa(){
     var operacion1 = numeral().unformat(forma["registro"].value),
         operacion2 = numeral().unformat(forma["precio"].value),
-        operacion3= numeral().unformat(forma["descuento"].value),
-        operacion4= numeral().unformat(forma["extraviada"].value);
+        operacion3= numeral().unformat(forma["extraviada"].value),
+        operacion5= numeral().unformat(forma["descuento"].value);
         var uti = (operacion1)*(operacion2),
             desc=(operacion1)*(operacion2)*(operacion3),
-            rob=(operacion1)-(operacion4)*(operacion2);
+            rob=(operacion1)-(operacion5)*(operacion2);
         salidaUtilidad.value =numeral(uti).format(FMT_NUMERO); 
         salidaUDesc.value =numeral(desc).format(FMT_NUMERO);
         salidaRobada.value =numeral(rob).format(FMT_NUMERO);
