@@ -5,20 +5,16 @@
   <meta name="viewport"
     content="width=device-width,
        initial-scale=1.0">
-  <title>Sesión</title>
-
+  <title>CALCULADORA DE PORCENTAJE CORPORAL</title>
   <script
-    src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js">
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js">
     </script>
-
   <script
-    src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js">
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js">
     </script>
-
   <script
-    src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js">
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js">
     </script>
-
   <script src="js/init.js">
   </script>
   <script type="module"
@@ -27,8 +23,6 @@
   <script type="module"
     src="cmp/mi-footer.js">
     </script>
-  <script type="module"
-    src="cmp/mi-progreso.js">
     </script>
   <link rel="stylesheet"
     href="css/estilos.css">
@@ -38,13 +32,7 @@
     <mi-nav></mi-nav>
     <header>
       <h1>Sesión</h1>
-      <div class="herramientas">
-        <button
-          type="button"
-          name="terminarSesión">
-          Terminar Sesión
-        </button>
-      </div>
+      <h3>Dale click a las opciones</h3>
     </header>
     <figure>
       <img id="avatar" src=""
@@ -54,8 +42,6 @@
       <label>
         Email
         <output name="email">
-          <mi-progreso>
-          </mi-progreso>
         </output>
       </label>
     </p>
@@ -63,11 +49,17 @@
       <label>
         Nombre
         <output name="nombre">
-          <mi-progreso>
-          </mi-progreso>
         </output>
       </label>
     </p>
+    
+    <div class="herramientas">
+        <button
+          type="button"
+          name="terminarSesión">
+          Terminar Sesión
+        </button>
+      </div>
     <mi-footer></mi-footer>
   </form>
   <script type="module"
