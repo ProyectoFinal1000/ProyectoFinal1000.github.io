@@ -20,7 +20,7 @@ const firestore = getFirestore();
 const daoRol = firestore.
   collection("Rol");
 const daoPasatiempo = firestore.
-  collection("Registro");
+  collection("Pasatiempo");
 const daoUsuario = firestore.
   collection("Usuario");
 
@@ -63,7 +63,7 @@ async function htmlLista(snap) {
   } else {
     html += /* html */
       `<li class="vacio">
-        -- No hay clientes
+        -- No hay usuarios
         registrados. --
       </li>`;
   }
@@ -96,7 +96,7 @@ async function htmlFila(doc) {
     "usuario.html?${parámetros}">
         <span class="marco">
           <img src="${img}"
-            alt="Falta Imagen">
+            alt="Falta el Avatar">
         </span>
         <span class="texto">
           <strong
@@ -133,7 +133,7 @@ async function
         `${cod(data.nombre)}`);
     }
   }
-  return "-- Sin Datos Registrados--";
+  return "-- Sin Pasatiempo --";
 }
 
 /** Recupera el html de los
