@@ -42,7 +42,10 @@ class MiNav extends HTMLElement {
             <a href=
 "registro.html">Operaciones</a>
           </li>
-          `;
+          <li>
+            <a href=
+              "usuarios.html">Clientes</a>
+          </li>`;
       }
      
       if (roles.has(
@@ -51,7 +54,7 @@ class MiNav extends HTMLElement {
           `
           <li>
             <a href=
-      "usuarios.html">Usuarios</a>
+      "usuarioNuevo.html">Clientes</a>
           </li>`;
       }
       this.ul.innerHTML += html;
