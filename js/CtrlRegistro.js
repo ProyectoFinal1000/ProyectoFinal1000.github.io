@@ -17,7 +17,7 @@ function procesa(){
         operador3= numeral().unformat(forma["descuento"].value);
         var uti =((operador1)*(operador2*.16)),
             des=((operador3/100)*(operador1)),
-            extra=((operador5)-(operador1)*(operador2*.16));
+            extra=((operador1)-(operador5)*(operador2*.16));
         salidaUtilidad.value =numeral(uti).format(FMT_NUMERO); 
         salidaDescuento.value =numeral(des).format(FMT_NUMERO);
         salidaExtraviado.value =numeral(extra).format(FMT_NUMERO);
