@@ -1,10 +1,11 @@
 export function
   muestraPasatiempos() {
   location.href =
-    "pasatiempos.html";
+    "calculadora.html";
 }
 
 export function
   muestraUsuarios() {
   location.href = "usuarios.html";
 }
+
