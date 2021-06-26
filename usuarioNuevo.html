@@ -5,7 +5,7 @@
   <meta name="viewport"
     content="width=device-width,
        initial-scale=1.0">
-  <title>Usuario</title>
+  <title>Usuario Nuevo</title>
   <script
     src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js">
     </script>
@@ -26,6 +26,9 @@
   <script type="module"
     src="cmp/mi-footer.js">
     </script>
+  <script type="module"
+    src="cmp/mi-progreso.js">
+    </script>
   <link rel="stylesheet"
     href="css/estilos.css">
 </head>
@@ -33,31 +36,27 @@
   <form name="forma">
     <mi-nav></mi-nav>
     <header>
-      <h1>
-        <output name="cue">
-          Usuario
-          <mi-progreso>
-          </mi-progreso>
-        </output>
-      </h1>
+      <h1>Usuario Nuevo</h1>
       <div class="herramientas">
         <a href="usuarios.html">
           Cancelar</a>
-        <button>Guardar</button>
-        <button name="eliminar"
-          type="button">
-          Eliminar
+        <button type="submit">
+          Guardar
         </button>
       </div>
     </header>
-    <figure id="figure">
-      <img alt="Falta el Avatar">
-    </figure>
+    <p>
+      <label>
+        Cue
+        <input name="cue"
+          type="email" required>
+      </label>
+    </p>
     <p>
       <label>
         Avatar
         <input name="avatar"
-          type="file"
+          type="file" required
           accept=".png,.jpg,.jpeg,.gif">
       </label>
     </p>
@@ -92,7 +91,8 @@
     <mi-footer></mi-footer>
   </form>
   <script type="module"
-    src="js/CtrlUsuario.js">
+    src="js/CtrlUsuarioNuevo.js">
     </script>
 </body>
 </html>
+
