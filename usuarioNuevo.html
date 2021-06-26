@@ -5,7 +5,7 @@
   <meta name="viewport"
     content="width=device-width,
        initial-scale=1.0">
-  <title>Usuario Nuevo</title>
+  <title>Usuario</title>
   <script
     src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js">
     </script>
@@ -26,9 +26,6 @@
   <script type="module"
     src="cmp/mi-footer.js">
     </script>
-  <script type="module"
-    src="cmp/mi-progreso.js">
-    </script>
   <link rel="stylesheet"
     href="css/estilos.css">
 </head>
@@ -36,27 +33,31 @@
   <form name="forma">
     <mi-nav></mi-nav>
     <header>
-      <h1>Cliente Nuevo</h1>
+      <h1>
+        <output name="cue">
+          Usuario
+          <mi-progreso>
+          </mi-progreso>
+        </output>
+      </h1>
       <div class="herramientas">
         <a href="usuarios.html">
           Cancelar</a>
-        <button type="submit">
-          Guardar
+        <button>Guardar</button>
+        <button name="eliminar"
+          type="button">
+          Eliminar
         </button>
       </div>
     </header>
-    <p>
-      <label>
-        Correo
-        <input name="cue"
-          type="email" required>
-      </label>
-    </p>
+    <figure id="figure">
+      <img alt="Falta el Avatar">
+    </figure>
     <p>
       <label>
         Avatar
         <input name="avatar"
-          type="file" required
+          type="file"
           accept=".png,.jpg,.jpeg,.gif">
       </label>
     </p>
@@ -65,35 +66,21 @@
     -->
     <p>
       <label>
-        IMC
-        <input name="IMC" type="text" required>
-      </label>
-    </p>
-    
-    <p>
-      <label>
-        PORCENTAJE DE GRASA
-        <input name="grasa" type="text" required>
-      </label>
-    </p>
-    <p> 
-      <label> 
-        Edad
-      <input name="edad" type="text" required>
+        Pasatiempo
+        <select
+          name="pasatiempoId">
+          <option>
+            Cargando…
+          </option>
+        </select>
       </label>
     </p>
     <!--
       Maneja una asociación a
       muchos.
     -->
-     <p>
-      <label>
-        FECHA
-        <input name="fecha" type="date" required>
-      </label>
-    </p> 
     <fieldset>
-      <legend>¿QUE NECESITA?</legend>
+      <legend>Roles</legend>
       <ul id="listaRoles"
         class="checks">
         <li>
@@ -105,7 +92,7 @@
     <mi-footer></mi-footer>
   </form>
   <script type="module"
-    src="js/CtrlUsuarioNuevo.js">
+    src="js/CtrlUsuario.js">
     </script>
 </body>
 </html>
