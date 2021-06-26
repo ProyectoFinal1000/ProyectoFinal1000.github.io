@@ -169,3 +169,4 @@ function errConsulta(e) {
   // Intenta conectarse otra vez.
   consulta();
 }
+
