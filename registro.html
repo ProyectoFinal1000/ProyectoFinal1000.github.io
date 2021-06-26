@@ -1,99 +1,106 @@
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, ">
-    <title>Operaciones</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, " >
+    <title>CALCULADORA DE GRASA CORPORAL</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/libs/bignumber.js/bignumber.min.js"></script>
+        <script src="js/libs/numeral.js/numeral.min.js"></script>
     <script
-    src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js">
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js">
     </script>
   <script
-    src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js">
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js">
     </script>
   <script
-    src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js">
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js">
     </script>
   <script
-    src="https://www.gstatic.com/firebasejs/8.6.7/firebase-storage.js">
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js">
     </script>
-  <script src="js/init.js">
+    <script src="js/init.js">
   </script>
-  <script type="module"
-    src="cmp/mi-nav.js">
-    </script>
-  <script type="module"
+    <script type="module"
+    src="cmp/mi-nav.js"> </script>
+    <script type="module"
     src="cmp/mi-footer.js">
     </script>
   <script type="module"
     src="cmp/mi-progreso.js">
     </script>
-</head>
-<body>
-    <mi-nav></mi-nav>
-    <h1>Realiza la operación que necesites</h1>
-  <form id="forma">
-    <p><em>Necesitas registrar todos los datos para continuar</em></p>
-    <p>
-      <label acceskey="R">
-          Registra cuanta mercancía llegó o la que ya había:<br>
-          <input name="registro" type="text" class="numero"  required pattern="[0-9,]+{.}\d{1}" placeholder="Registra"
-                 maxlength="11" size="13">
-          
-      </label>
-      <br><output id="salidaOp1"></output>
-  </p>
-  <p>
-      <label acceskey="P">
-          Precio de la mercancía:<br>
-          <input name="precio" type="text" class="numero"  required pattern="[0-9,]+{.}\d{1}"  placeholder="$"
-                 maxlength="11" size="13" >
-          
-      </label>
-      <br><output id="salidaOp2"></output>
-  </p>
-   <p>
-      <label acceskey="D">
-          Descuento aplicable sobre la mercancía:<br>
-          <input name="descuento" type="text" class="numero" required pattern="[0-9,]+{.}\d{1}" placeholder="%"
-                 maxlength="11" size="13" >
-          
-      </label>
-      <br><output id="salidaOp3"></output>
-  </p>
-  <p>
-      
-      <label acceskey="E">
-          Mercancía total robada o extraviada: <br>
-          <input name="extraviada" type="text" class="numero" required pattern="[0-9,]+{.}\d{1}" placeholder="Robada o extraviada" 
-                 maxlength="11" size="13">
-        </label>
-          <br><output id="salidaOp5"></output> 
-  </p>
-  
- 
-  <p>
-      <button type="button" onclick="procesa()">CALCULAR</button>
-  </p>
-   <p>
-      <label acceskey="U">
-          Utilidad total de la mercancía: 
-      </label>
-      <output id="salidaUtilidad"></output>
-  </p>
-  <p>
-      <label acceskey="B">
-          Utilidad total de la mercancía con descuento: 
-      </label>
-      <output id="salidaUDesc"></output>
-  </p>
-  <p>
-      <label acceskey="P">
-          Utilidad total por la mercancia robada: 
-      </label>
-      <output id="salidaRobada"></output>
-  </p>
-</form>
-<script src="js/CtrlRegistro.js"></script>
-<mi-footer></mi-footer>
-</body>
+  </head>
+  <body>
+  <mi-nav></mi-nav>
+    <h3>CALCULADORA DE PORCENTAJE DE GRASA CORPORAL</h3>
+      <p> 
+            En la perdida de peso, la grasa corporal juega un papel muy importante, pues esta define nuestros objetivos.
+        </p>
+    <form id="forma">
+        <p><em>El borde azul indica obligatorio</em></p> 
+        <p>
+                <label acceskey="O1">
+                    Estatura<br>
+                    <input name="estatura" type="text" class="numero"  required pattern="[0-9,]+{.}\d{1}" placeholder="en centimetros"
+                           maxlength="11" size="13">
+                    
+                </label>
+                <br><output id="salidaOp1"></output>
+            </p>
+            <p>
+                <label acceskey="O2">
+                    Peso(kg)<br>
+                    <input name="peso" type="text" class="numero"  required pattern="[0-9,]+{.}\d{1}"  placeholder="en kilogramos"
+                           maxlength="11" size="13" >
+                    
+                </label>
+                <br><output id="salidaOp2"></output>
+            </p>
+             <p>
+                <label acceskey="O3">
+                    Circunferencia cintura<br>
+                    <input name="cintura" type="text" class="numero" required pattern="[0-9,]+{.}\d{1}" placeholder="en centimetros"
+                           maxlength="11" size="13" >
+                    
+                </label>
+                <br><output id="salidaOp3"></output>
+            </p>
+            
+            <p>
+                
+                <label acceskey="05">
+                    Edad <br><input name="edad" type="text" class="numero" required pattern="[0-9,]+{.}\d{1}"  maxlength="11" size="13"></label>
+                    <br><output id="salidaOp5"></output> 
+            </p>
+            
+           
+            <p>
+                <button type="button" onclick="procesa()">CALCULAR</button>
+            </p>
+             <p>
+                <label acceskey="S">
+                    INDICE DE MASA CORPORAL: 
+                </label>
+                <output id="salidaIMC"></output>
+            </p>
+            <p>
+                <label acceskey="R">
+                    PORCENTAJE DE GRASA CORPORAL: 
+                </label>
+                <output id="salidaGrasa"></output>
+            </p>
+            <p>
+                <label acceskey="M">
+                    CALORIAS DIARIAS: 
+                </label>
+                <output id="salidaCalorias"></output>
+            </p>
+            <img src="grasa.png" style="width: 400px; height:200px">
+                
+        </form>
+    <script src="js/CtrlRegistro.js"></script>
+    
+    
+  <mi-footer></mi-footer>
+  </body>
 </html>
+
