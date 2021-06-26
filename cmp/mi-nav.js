@@ -14,7 +14,7 @@ class MiNav extends HTMLElement {
       `<ul>
         <li>
           <a href="index.html">
-            Sesión</a>
+            SESION</a>
         </li>
       </ul>`;
     this.ul =
@@ -24,32 +24,34 @@ class MiNav extends HTMLElement {
         cambiaUsuario(usuario),
       muestraError);
   }
-
+  
   async cambiaUsuario(usu) {
     if (usu && usu.email) {
       let html = "";
       const roles =
         await cargaRoles(
           usu.email);
-
+    
       if (roles.has("Cliente")) {
         html += /* html */
           `<li>
             <a href=
-              "chat.html">Chat</a>
+              "chat.html">CHAT</a>
           </li>
-           <li>
+          <li>
             <a href=
-               "registro.html">Registro</a>
-          </li>`;
+"registros.html">Operaciones</a>
+          </li>
+          `;
       }
-
+     
       if (roles.has(
         "Administrador")) {
         html += /* html */
-          `<li>
+          `
+          <li>
             <a href=
-      "usuarios.html">Usuarios</a>
+      "usuarios.html">CLIENTES</a>
           </li>`;
       }
       this.ul.innerHTML += html;
