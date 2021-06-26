@@ -20,6 +20,6 @@ function procesa(){
             grasa=0.64-(0.20*operador1/operador3);
         salidaCalorias.value =numeral(cal).format(FMT_NUMERO); 
         salidaIMC.value =numeral(imc).format(FMT_NUMERO);
-        salidaPorcentaje.value =numeral(grasa).format(FMT_PORCENTAJE);
+        salidaPorcentaje.value =numeral(grasa).format(FMT_NUMERO);
     }
 
