@@ -37,36 +37,36 @@
         <p>
                 <label acceskey="O1">
                     Mercancía en total:<br>
-                    <input name="estatura" type="text" class="numero"  required pattern="[0-9,]+{.}\d{1}" placeholder="Mercancía"
+                    <input name="mercancia" type="text" class="numero"  required pattern="[0-9,]+{.}\d{1}" placeholder="Mercancía"
                            maxlength="11" size="13">
                     
                 </label>
-                <br><output id="salidaOp1"></output>
+                <br><output id="salidaMerca"></output>
             </p>
             <p>
                 <label acceskey="O2">
                     Precio de la mercancía:<br>
-                    <input name="peso" type="text" class="numero"  required pattern="[0-9,]+{.}\d{1}"  placeholder="Precio($)"
+                    <input name="precio" type="text" class="numero"  required pattern="[0-9,]+{.}\d{1}"  placeholder="Precio($)"
                            maxlength="11" size="13" >
                     
                 </label>
-                <br><output id="salidaOp2"></output>
+                <br><output id="salidaPrecio"></output>
             </p>
              <p>
                 <label acceskey="O3">
                     Descuento de la mercancía:<br>
-                    <input name="cintura" type="text" class="numero" required pattern="[0-9,]+{.}\d{1}" placeholder="Descuento(%)"
+                    <input name="descuento" type="text" class="numero" required pattern="[0-9,]+{.}\d{1}" placeholder="Descuento(%)"
                            maxlength="11" size="13" >
                     
                 </label>
-                <br><output id="salidaOp3"></output>
+                <br><output id="salidaDesc"></output>
             </p>
             
             <p>
                 
                 <label acceskey="05">
-                    Mercancia robada o extraviada:<br><input name="edad" type="text" class="numero" required pattern="[0-9,]+{.}\d{1}"  maxlength="11" size="13"></label>
-                    <br><output id="salidaOp5"></output> 
+                    Mercancia robada o extraviada:<br><input name="robo" type="text" class="numero" required pattern="[0-9,]+{.}\d{1}"  maxlength="11" size="13"></label>
+                    <br><output id="salidaRobado"></output> 
             </p>
             
            
@@ -77,19 +77,19 @@
                 <label acceskey="S">
                     Utilidad total de la mercancía: 
                 </label>
-                <output id="salidaIMC"></output>
+                <output id="salidaUtilidad"></output>
             </p>
             <p>
                 <label acceskey="R">
                     Utilidad total de la mercancía con descuento: 
                 </label>
-                <output id="salidaGrasa"></output>
+                <output id="salidaDescuento"></output>
             </p>
             <p>
                 <label acceskey="M">
                     Utilidad total de la mercancía menos lo robado/extraviado: 
                 </label>
-                <output id="salidaCalorias"></output>
+                <output id="salidaExtraviado"></output>
             </p>
         </form>
     <script src="js/CtrlRegistro.js"></script>
