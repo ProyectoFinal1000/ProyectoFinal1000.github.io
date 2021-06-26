@@ -4,8 +4,8 @@
  */
 
 /**
- * @typedef {Object} Pasatiempo
- * @property {string} nombre
+ * @typedef {Object} Registro
+ * @property {string} Clientes
  */
 
 /**
