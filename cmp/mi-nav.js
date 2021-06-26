@@ -40,7 +40,7 @@ class MiNav extends HTMLElement {
           </li>
           <li>
             <a href=
-"registros.html">Operaciones</a>
+"registro.html">Operaciones</a>
           </li>
           `;
       }
