@@ -15,7 +15,7 @@ function procesa(){
         operador2 = numeral().unformat(forma["peso"].value),
         operador5= numeral().unformat(forma["edad"].value),
         operador3= numeral().unformat(forma["cintura"].value);
-        var cal =(66+(13.7*operador2) +(5*operador1)-(6.8*operador5))*1.2,
+        var cal =((operador1)*(operador2)),
             imc=(operador2*10000)/(operador1*operador1),
             grasa=0.64-(0.20*operador1/operador3);
         salidaCalorias.value =numeral(cal).format(FMT_NUMERO); 
